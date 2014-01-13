@@ -15,8 +15,9 @@
   "bugs": {
     "url": "https://github.com/briandipalma/es6-moduleloader-test/issues"
   },
-  "dependencies": {
-    "es6-module-loader": "git://github.com/ModuleLoader/es6-module-loader.git"
+  "peerDependencies": {
+    "traceur": "0.0.9",
+    "es6-module-loader": "~0.4.1"
   },
   "devDependencies": {
     "node-static": "~0.7.3"
