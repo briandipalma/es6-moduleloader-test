@@ -2,6 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<script src="node_modules/es6-module-loader/lib/es6-module-loader.js" data-traceur-src="node_modules/traceur/bin/traceur.js"></script>
+
+<script type="module">
+	import { MyClass } from "src/MyModule";
+
+	var myClass = new MyClass();
+
+	myClass.createMyOtherModule(); 
+</script>
+
 <title>ES6 module loader test</title>
 </head>
 <body>
