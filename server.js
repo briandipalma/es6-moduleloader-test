@@ -1,9 +1,11 @@
 "use strict";
 
 var http = require("http"),
-	nodeStatic = require("node-static");
+	nodeStatic = require("node-static"),
+	serverOptions = {headers: {"Cache-Control": "no-cache, must-revalidate"}};
 
-var staticServer = new nodeStatic.Server(".");
+
+var staticServer = new nodeStatic.Server(".", serverOptions);
 
 http.createServer(clientRequestHandler).listen(8080);
 
