@@ -4,7 +4,8 @@
   "description": "Testing es6 module loader polyfill",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "postinstall": "npm dedupe"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/briandipalma/es6-moduleloader-test/issues"
   },
-  "peerDependencies": {
+  "dependencies": {
     "traceur": "0.0.9",
     "es6-module-loader": "~0.4.1"
   },
