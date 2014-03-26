@@ -2,25 +2,22 @@
   "name": "es6-moduleloader-test",
   "version": "0.0.0",
   "description": "Testing es6 module loader polyfill",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "npm dedupe"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/briandipalma/es6-moduleloader-test.git"
   },
-  "author": "",
+  "author": "Brian Di Palma",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/briandipalma/es6-moduleloader-test/issues"
   },
   "dependencies": {
-    "traceur": "0.0.9",
-    "es6-module-loader": "~0.4.1"
-  },
-  "devDependencies": {
-    "node-static": "~0.7.3"
+    "traceur": "^0.0.32",
+    "es6-module-loader": "^0.5.3",
+    "server": "git://github.com/briandipalma/server"
   }
 }
