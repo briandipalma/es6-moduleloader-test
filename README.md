@@ -12,3 +12,5 @@ Clone the repo.
 To set-up `npm i`
 
 To start `npm start`
+
+This should launch a browser. Bringing up the browser console will show console output from a few different ES6 classes and modules. Going to the sources tab shows the loaded code. With source map support enabled in your browser you should see the original ES6 source code otherwise you will see the compiled output.
