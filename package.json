@@ -4,8 +4,10 @@
   "description": "Testing es6 module loader polyfill",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build-all": "traceur --sourcemap --dir src/ out/"
+    "start-node": "traceur src/MainModule.js",
+    "build": "traceur --dir src/ out/ --sourcemap",
+    "build-browser": "traceur --out out/package.js out/**",
+    "build-node": "traceur --dir src/ out/ --modules=commonjs --sourcemap"
   },
   "repository": {
     "type": "git",
